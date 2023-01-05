@@ -4,7 +4,9 @@ Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-912
 Operations and Support @ DataRobot
 ----------------------------------
 
-Total experience of around 6 years, almost all of it in Technical troubleshooting and customer support. 1. Hadoop : Spark,Kafka,YARN,Hive etc. 2. Platform & Ops : Docker, K8s, Ansible,AWS & Linux Administration.
+Total experience of around 6 years, almost all of it in Technical troubleshooting and customer support. 
+1.🐘 Hadoop : Spark,Kafka,YARN,Hive etc. 
+2.🛳 Platform & Ops : Docker, K8s, Ansible,AWS & Linux Administration.
 
 * 🌍  I'm based in Bangalore
 * ✉️  You can contact me at [hgaaditya@gmail.com](mailto:hgaaditya@gmail.com)
