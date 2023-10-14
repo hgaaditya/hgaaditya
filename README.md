@@ -11,7 +11,7 @@ Total experience of around 6 years, almost all of it in Technical troubleshootin
 
 * 🌍  I'm based in Bangalore
 * ✉️  You can contact me at [hgaaditya@gmail.com](mailto:hgaaditya@gmail.com)
-* 🧠  I'm learning Python
+* 🧠  I'm learning Kubernetes & CI/CD Pipelines
 * 🤝  I'm open to collaborating on Homeserver, Smarthome, Automation, Automotive
 * ⚡  Avid Motorcyclist, Automobile and Technology savant!. Researching Entrepreneurship.
 
