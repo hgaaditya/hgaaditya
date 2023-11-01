@@ -4,7 +4,7 @@ Hi 👋 ![](https://user-images.githubusercontent.com/18350557/176309783-0785949
 Operations and Support @ DataRobot
 ----------------------------------
 
-Total experience of around 6 years, almost all of it in Technical troubleshooting and customer support.
+Total experience of around 6 years, almost all of it in Technical troubleshooting and customer support. And some of it around Cloud Architecture, Containerization and IaC.
 
 1.🐘 Hadoop : Spark,Kafka,YARN,Hive etc.  
 2.🛳 Platform & Ops : Docker, K8s, Ansible,AWS & Linux Administration.  
