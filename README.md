@@ -4,12 +4,13 @@ Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-912
 Operations and Support @ DataRobot
 ----------------------------------
 
-Total experience of around 6 years, almost all of it in Technical troubleshooting and customer support. And some of it around Cloud Architecture, Containerization and IaC.
+Over 7 years of experience in technical troubleshooting, customer support, and managing cloud and containerized environments.
 
 1.🐘 Hadoop : Spark,Kafka,YARN,Hive etc.  
 2.🛳 Platform & Ops : Docker, K8s ,Cloud Platforms & Linux.  
 3.🌥️ Cloud : AWS : EC2,S3,IAM,EKS,ECR,Route 53,Cloudwatch,Load Balancers (And their counterparts from other cloud vendors).    
-4.🔧 Infra as Code(IaC) : Ansible,Terraform & Helm.
+4.🔧 Infra as Code(IaC) : Ansible,Terraform & Helm.    
+5.🥇 Certifications : Certified Kubernetes Administrator, MongoDB Certified Associate Developer, HDPCA, DataRobot ML 1.
 
 * 🌍  I'm based in Bangalore
 * ✉️  You can contact me at [hgaaditya@gmail.com](mailto:hgaaditya@gmail.com)
