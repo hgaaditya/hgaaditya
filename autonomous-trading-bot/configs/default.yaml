@@ -1,0 +1,44 @@
+# Default configuration. Copy and edit; pass with `--config path/to.yaml`.
+# A run is fully described by this file, which is logged and audited alongside
+# the trades it produced.
+
+mode: paper                 # paper | backtest | live (live is gated off in this build)
+
+market:
+  exchange: NSE
+  symbols: [RELIANCE]
+  timeframe: 1m
+
+risk:
+  starting_capital: 100000  # capital the bot is seeded with
+  risk_per_trade: 0.005     # risk 0.5% of equity per trade (stop-based sizing)
+  max_positions: 3
+  max_exposure: 1.0         # gross exposure cap (x equity)
+  daily_max_loss: 0.02      # HARD kill-switch: halt for the day at -2%
+  daily_profit_target:      # optional: e.g. 0.03 to bank a +3% day
+  per_trade_max_qty: 100000
+
+costs:                      # Indian intraday equity cost model
+  brokerage_pct: 0.0003
+  brokerage_cap: 20.0
+  stt_sell_pct: 0.00025
+  exchange_txn_pct: 0.0000297
+  sebi_pct: 0.000001
+  stamp_buy_pct: 0.00003
+  gst_pct: 0.18
+  slippage_pct: 0.0002
+
+sentiment:
+  provider: rules           # rules | llm | none
+  weight: 0.3               # how strongly the daily bias gates entries
+
+strategies:
+  - name: trend
+    enabled: true
+    params: { ema_fast: 9, ema_slow: 21, adx_min: 20, atr_stop_mult: 1.5, rr: 1.5 }
+  - name: mean_reversion
+    enabled: true
+    params: { bb_period: 20, rsi_period: 14, rsi_low: 30, rsi_high: 70 }
+
+data_dir: data
+runs_dir: runs
