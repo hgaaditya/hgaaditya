@@ -1,0 +1,57 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "tradingbot"
+version = "0.1.0"
+description = "Autonomous, risk-first intraday trading bot (Indian market first, broker-agnostic)"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Aaditya H G" }]
+dependencies = [
+    "pandas>=2.0",
+    "numpy>=1.24",
+    "pydantic>=2.5",
+    "pydantic-settings>=2.1",
+    "PyYAML>=6.0",
+    "structlog>=24.1",
+    "typer>=0.12",
+    "rich>=13.0",
+    "APScheduler>=3.10",
+]
+
+[project.optional-dependencies]
+# Heavy / integration extras kept out of the default install so the core
+# stays hermetic and installable anywhere. Enable per phase.
+research = ["scikit-learn>=1.3", "vectorbt>=0.26"]
+angelone = ["smartapi-python>=1.4"]      # Angel One SmartAPI (Phase 2 live)
+zerodha = ["kiteconnect>=4.2"]           # Zerodha Kite Connect
+crypto = ["ccxt>=4.2"]                    # crypto exchanges (Phase 4)
+us = ["alpaca-py>=0.20"]                  # US equities (Phase 4)
+llm = ["anthropic>=0.40"]                 # Claude-API sentiment adapter
+dev = ["pytest>=8.0", "ruff>=0.5", "mypy>=1.8"]
+
+[project.scripts]
+tradingbot = "tradingbot.cli:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["tradingbot"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.mypy]
+python_version = "3.11"
+ignore_missing_imports = true
+warn_unused_ignores = false
